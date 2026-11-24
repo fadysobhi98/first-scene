@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos — FS | First Scene</title>
+<meta name="description" content="Films by FS | First Scene. Each cover opens that single film on Google Drive.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">FS <span>|</span> FIRST SCENE</div>
+    <nav>
+      <a href="index.html">Work</a>
+      <a href="photos.html">Photos</a>
+      <a href="videos.html" class="current">Videos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<section id="videos" class="page-head">
+  <div class="sec-head"><h2>Videos</h2><div class="tag">All films in one place · each cover opens that single film</div></div>
+  <div class="covers">
+    <a class="cover" href="https://drive.google.com/file/d/1daxK1V7qlL6ikV2bD1YhUIP2cdCEC6gh/view" target="_blank" rel="noreferrer">
+      <img data-i="interreg-4" alt="Interreg NEXT MED promo film cover" loading="lazy">
+      <span class="name">Interreg NEXT MED — Promo</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1agPrtkX562l3sgpSyyNZNkYUZw1GB4NX/view" target="_blank" rel="noreferrer">
+      <img data-i="gb-4" alt="GB Farms film cover" loading="lazy">
+      <span class="name">GB Farms — Film</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1jofdI8kgx_5u6oLsv5X-pV87KRTu_BzR/view" target="_blank" rel="noreferrer">
+      <img data-i="egypes-4" alt="Ministry of Petroleum pavilion film cover" loading="lazy">
+      <span class="name">Ministry of Petroleum — Pavilion Film</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1w-vEICBJI88t7al6PGEWfkGf3VKmJPip/view" target="_blank" rel="noreferrer">
+      <img data-i="mnt-3" alt="MNTRONIC promo 01 cover" loading="lazy">
+      <span class="name">MNTRONIC — Promo 01</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1zXRzYipz2HEbsDiG16EvnYdHdVGkVL7w/view" target="_blank" rel="noreferrer">
+      <img data-i="mnt-2" alt="MNTRONIC promo 02 cover" loading="lazy">
+      <span class="name">MNTRONIC — Promo 02</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+  </div>
+  <div class="covers" id="more-films" style="margin-top:12px"><!-- FILM CARDS --></div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="kicker">Bookings and inquiries</div>
+    <h2>Work with us</h2>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://wa.me/201275314549" target="_blank" rel="noreferrer">WhatsApp · 0127 531 4549</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/fs.first_scene" target="_blank" rel="noreferrer">Instagram · @fs.first_scene</a>
+    </div>
+    <p class="fine">FS | First Scene — Event &amp; Commercial Photo/Video · Egypt | KSA. Albums and films are view-only Google Drive links.</p>
+  </div>
+</footer>
+<script src="p02.js"></script>
+<script src="p03.js"></script>
+<script src="p05.js"></script>
+<script src="p06.js"></script>
+<script src="p09.js"></script>
+<script>
+  document.querySelectorAll('img[data-i]').forEach(function(el){ var v=window.FSIMGS&&window.FSIMGS[el.dataset.i]; if(v) el.src=v; });
+</script>
+</body>
+</html>
