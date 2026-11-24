@@ -45,6 +45,8 @@
   .btn-primary { background:var(--ink); color:#141213; }
   .btn-ghost { border:1px solid var(--line); color:var(--ink); }
   .fine { color:var(--muted); font-size:12.5px; margin-top:34px; }
+  .group-title { grid-column:1/-1; margin:26px 0 2px; font-size:13px; letter-spacing:.14em; text-transform:uppercase; color:var(--muted,#9a939c); }
+  .group-title span { color:var(--accent); }
   @media (max-width:700px) { .grid { grid-template-columns:repeat(3,1fr); gap:8px; } }
 
   nav a.current { color:var(--ink); border-bottom:2px solid var(--accent); padding-bottom:3px; }
@@ -85,6 +87,7 @@
     <img data-i="mnt-3" alt="FS First Scene event and commercial photography" loading="lazy">
     <img data-i="mnt-2" alt="FS First Scene event and commercial photography" loading="lazy">
   </div>
+  <div class="grid" id="all-photos" style="margin-top:34px"></div>
 </section>
 </main>
 
@@ -108,9 +111,29 @@
 <script src="p07.js"></script>
 <script src="p08.js"></script>
 <script src="p09.js"></script>
+<script src="ph1.js"></script>
 <script src="p10.js"></script>
 <script src="p11.js"></script>
 <script>
+  (function(){
+    var host = document.getElementById('all-photos');
+    if (!host || !window.FSPHOTOS) return;
+    var frag = document.createDocumentFragment();
+    window.FSPHOTOS.forEach(function(g){
+      var t = document.createElement('div');
+      t.className = 'group-title';
+      t.innerHTML = g.label + ' <span>&middot; ' + g.ids.length + '</span>';
+      frag.appendChild(t);
+      g.ids.forEach(function(id){
+        var im = document.createElement('img');
+        im.loading = 'lazy'; im.decoding = 'async';
+        im.alt = g.label + ' - FS First Scene photography';
+        im.src = 'https://drive.google.com/thumbnail?id=' + id + '&sz=w600';
+        frag.appendChild(im);
+      });
+    });
+    host.appendChild(frag);
+  })();
   document.querySelectorAll('img[data-i]').forEach(function(el){ var v=window.FSIMGS&&window.FSIMGS[el.dataset.i]; if(v) el.src=v; });
 </script>
 </body>
