@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Videos — FS | First Scene</title>
+<meta name="description" content="Films by FS | First Scene. Each cover opens that single film on Google Drive.">
+<style>
+:root { --bg:#0c0b0c; --panel:#141213; --ink:#f4f1ee; --muted:#a49e9a; --line:#2a2728; --accent:#c9a25e; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; line-height:1.55; }
+  a { color:inherit; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+  header { position:sticky; top:0; z-index:10; background:rgba(12,11,12,.85); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-weight:700; letter-spacing:.14em; font-size:14px; }
+  .brand span { color:var(--accent); }
+  nav a { font-size:13px; color:var(--muted); text-decoration:none; margin-left:22px; letter-spacing:.06em; }
+  nav a:hover { color:var(--ink); }
+  .hero { position:relative; min-height:64vh; display:flex; align-items:flex-end; background-color:#141213; background-position:center 35%; background-size:cover; background-repeat:no-repeat; }
+  .hero::before { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,11,12,.45), rgba(12,11,12,.92)); }
+  .hero .wrap { position:relative; padding:90px 20px 64px; }
+  .kicker { font-size:12px; letter-spacing:.28em; color:var(--accent); text-transform:uppercase; margin-bottom:14px; }
+  h1 { font-size:clamp(38px,7vw,68px); font-weight:800; letter-spacing:-.01em; line-height:1.05; }
+  .hero p { color:var(--muted); max-width:560px; margin-top:16px; font-size:16px; }
+  section { padding:64px 0 8px; }
+  .sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:22px; flex-wrap:wrap; }
+  h2 { font-size:clamp(22px,3.4vw,30px); font-weight:700; }
+  .tag { color:var(--muted); font-size:13px; letter-spacing:.12em; text-transform:uppercase; }
+  .blurb { color:var(--muted); max-width:640px; margin-bottom:20px; font-size:15px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .grid img { width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:10px; display:block; background:var(--panel); }
+  .covers { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin-top:12px; }
+  .cover { position:relative; display:block; border-radius:12px; overflow:hidden; text-decoration:none; background:var(--panel); }
+  .cover img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; transition:transform .35s ease; }
+  .cover:hover img { transform:scale(1.03); }
+  .cover .badge { position:absolute; left:12px; bottom:12px; display:inline-flex; align-items:center; gap:8px; background:rgba(10,9,10,.78); border:1px solid rgba(255,255,255,.14); padding:8px 14px; border-radius:999px; font-size:13px; }
+  .cover .badge .tri { color:var(--accent); font-size:11px; }
+  .cover .name { position:absolute; top:12px; left:12px; background:rgba(10,9,10,.66); padding:5px 11px; border-radius:999px; font-size:12px; letter-spacing:.04em; }
+  .album { display:inline-block; margin-top:16px; font-size:14px; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .album:hover { border-color:var(--accent); }
+  footer { margin-top:80px; border-top:1px solid var(--line); padding:48px 0 60px; }
+  .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }
+  .btn-primary { background:var(--ink); color:#141213; }
+  .btn-ghost { border:1px solid var(--line); color:var(--ink); }
+  .fine { color:var(--muted); font-size:12.5px; margin-top:34px; }
+  @media (max-width:700px) { .grid { grid-template-columns:repeat(3,1fr); gap:8px; } }
+
+  nav a.current { color:var(--ink); border-bottom:2px solid var(--accent); padding-bottom:3px; }
+  .page-head { padding:72px 0 8px; }
+</style>
+<link rel="stylesheet" href="theme.css"></head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">FS <span>|</span> FIRST SCENE</div>
+        <nav>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="photos.html">Photos</a>
+      <a href="videos.html" class="current">Videos</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<section id="videos" class="page-head">
+  <div class="sec-head"><h2>Videos</h2><div class="tag">All films in one place · each cover opens that single film</div></div>
+  <div class="covers">
+    <a class="cover" href="https://drive.google.com/file/d/1Owpp-HNXbsF9oEoCiVkuiqXr67dpzzdX/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel1" alt="Dr Aly - Social Reel 01 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 01</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1A98z_3v4IJQ4hXuljZpdfwECitDYDUQ6/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel2" alt="Dr Aly - Social Reel 02 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 02</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1nsZDyCprH8k-DjsUVNawCYURgdLiunbr/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel3" alt="Dr Aly - Social Reel 03 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 03</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1rpQDBLI17ZT66h6evkex7dRC4UO9HjME/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel4" alt="Dr Aly - Social Reel 04 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 04</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1d09cj0UfsUoDgQ4rLlwGRkJjQZYV2ohw/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel5" alt="Dr Aly - Social Reel 05 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 05</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1yT8skFepYREx6zR4HjSnEA8o1hPtYd8j/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel6" alt="Dr Aly - Social Reel 06 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 06</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1yrGdssdmDQYHj7Rb9t59r7iFm9iVmFwN/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel7" alt="Dr Aly - Social Reel 07 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 07</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1osEh5lV43pXk_NUGpdzuz1gr18SUgOQB/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel8" alt="Dr Aly - Social Reel 08 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 08</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1fBiwGc4VLWmtyj8oIflLm9p26YD_oA5G/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel9" alt="Dr Aly - Social Reel 09 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 09</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1K_TMuboCRDTWjBrxeGTW9035gkVigmX3/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel10" alt="Dr Aly - Social Reel 10 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 10</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1XlgSTGF4wtUA8XCLiGDxfJ-dt0hKInw1/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel11" alt="Dr Aly - Social Reel 11 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 11</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/13g_6fRNo-OTGuk50PPjPLb9dyu3tw-JH/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel12" alt="Dr Aly - Social Reel 12 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 12</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1AY6Ryu5-6BqaiVu_alGWzUtqnQhZTNjR/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel13" alt="Dr Aly - Social Reel 13 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 13</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1efs3XQ_N6McwGBnS_jwkNyuzTkfivl5D/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dralyreel14" alt="Dr Aly - Social Reel 14 cover" loading="lazy">
+      <span class="name">Dr Aly - Social Reel 14</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1SZeUM-jkE1rzBlA8-mpoSXjuKF4rqZG1/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-evaco-2" alt="EVACO - Exhibition Stand Film II cover" loading="lazy">
+      <span class="name">EVACO - Exhibition Stand Film II</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1vtUa2P678HlEFiYAqZswwUwYHdbwEiBg/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-pms" alt="PMS - Exhibition Stand Film cover" loading="lazy">
+      <span class="name">PMS - Exhibition Stand Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1wHR5EpZOMAAfFB_T_xrXy1y0yYZ9oaY5/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-evaco-build" alt="EVACO - Stand Build Timelapse cover" loading="lazy">
+      <span class="name">EVACO - Stand Build Timelapse</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1qDpkPshhF2Qajsqn2ckf_UHA-dj0uUly/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-evaco-1" alt="EVACO - Exhibition Stand Film cover" loading="lazy">
+      <span class="name">EVACO - Exhibition Stand Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1nW4Io2m9Ygt6TyLs2U_MqJMEJLaQhLpH/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-khaled-3" alt="Khaled Rezk Design Studio - Interior Reel III cover" loading="lazy">
+      <span class="name">Khaled Rezk Design Studio - Interior Reel III</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1hdRlBqn6b3TuAnUekls7Neo8nM_qKn3a/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-khaled-2" alt="Khaled Rezk Design Studio - Interior Reel II cover" loading="lazy">
+      <span class="name">Khaled Rezk Design Studio - Interior Reel II</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1_kbpteGkPy46MCtSA655YCriSh3FBKbk/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-khaled-1" alt="Khaled Rezk Design Studio - Interior Film cover" loading="lazy">
+      <span class="name">Khaled Rezk Design Studio - Interior Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/10XUWWPnldxkq80ZFdIaZof9cUnWGQRLk/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal-samir" alt="Dal Developments - Dr Samir Al Naggar cover" loading="lazy">
+      <span class="name">Dal Developments - Dr Samir Al Naggar</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/19z7Fls3P7puRZVsgBYIcf--M0H7kn9mk/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal-mostafa" alt="Dal Developments - Mostafa El Naggar cover" loading="lazy">
+      <span class="name">Dal Developments - Mostafa El Naggar</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1ZE_kECUTv79nWGSb0gv1pFb7lpcwn4B7/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal-hesham" alt="Dal Developments - Hesham El Naggar cover" loading="lazy">
+      <span class="name">Dal Developments - Hesham El Naggar</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1fAj63mhQQSycrBOzA_s2PoMtZ6gDCNFZ/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal-sherif" alt="Dal Developments - Eng Sherif Sameh cover" loading="lazy">
+      <span class="name">Dal Developments - Eng Sherif Sameh</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/128w3SCSH2fWB6Mk2_b9xSqebx34ezIfm/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal-0503" alt="Dal Developments - Event Highlights cover" loading="lazy">
+      <span class="name">Dal Developments - Event Highlights</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1_Q3BK1bn3qiUuNfroKWxc1m_I_VrOmae/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-lucky-i5" alt="Lucky - Guest Interview cover" loading="lazy">
+      <span class="name">Lucky - Guest Interview</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/1daxK1V7qlL6ikV2bD1YhUIP2cdCEC6gh/view" target="_blank" rel="noreferrer">
+      <img data-i="interreg-4" alt="Interreg NEXT MED promo film cover" loading="lazy">
+      <span class="name">Interreg NEXT MED — Promo</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1agPrtkX562l3sgpSyyNZNkYUZw1GB4NX/view" target="_blank" rel="noreferrer">
+      <img data-i="gb-4" alt="GB Farms film cover" loading="lazy">
+      <span class="name">GB Farms — Film</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1jofdI8kgx_5u6oLsv5X-pV87KRTu_BzR/view" target="_blank" rel="noreferrer">
+      <img data-i="egypes-4" alt="Ministry of Petroleum pavilion film cover" loading="lazy">
+      <span class="name">Ministry of Petroleum — Pavilion Film</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1w-vEICBJI88t7al6PGEWfkGf3VKmJPip/view" target="_blank" rel="noreferrer">
+      <img data-i="mnt-3" alt="MNTRONIC promo 01 cover" loading="lazy">
+      <span class="name">MNTRONIC — Promo 01</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1zXRzYipz2HEbsDiG16EvnYdHdVGkVL7w/view" target="_blank" rel="noreferrer">
+      <img data-i="mnt-2" alt="MNTRONIC promo 02 cover" loading="lazy">
+      <span class="name">MNTRONIC — Promo 02</span>
+      <span class="badge"><span class="tri">▶</span> Watch the film</span>
+    </a>
+  </div>
+  <div class="covers" id="more-films" style="margin-top:12px">
+    <a class="cover" href="https://drive.google.com/file/d/16BFbau5JyjW-IwTRWdSAaR6MuhA7xiCZ/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-promo" alt="First Scene - Cinema Promo cover" loading="lazy">
+      <span class="name">First Scene - Cinema Promo</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+    <a class="cover" href="https://drive.google.com/file/d/15JwYDVZn9QuZOgIjVxjq4vQehn7B9mJX/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-gezira" alt="Gezira Club - Match Day Highlights cover" loading="lazy">
+      <span class="name">Gezira Club - Match Day Highlights</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/15r2UZPol_FlJl_up-7xP2XcrMH2KzZqS/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-velaro" alt="Siemens Velaro - Egypt High-Speed Train cover" loading="lazy">
+      <span class="name">Siemens Velaro - Egypt High-Speed Train</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1dAQ6solCgLIxMv0ekgjGE-IRJKNrxWyM/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-mv" alt="Mountain View - Compound Film cover" loading="lazy">
+      <span class="name">Mountain View - Compound Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1DuvX9_Rm567XNj-cIFMtBfglLFN1Hz2x/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-auto" alt="Automotive Promo - Social Reel cover" loading="lazy">
+      <span class="name">Automotive Promo - Social Reel</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1xA0A6i4MrwI_SZmWSIvFoh63DjVaGKQq/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-lakeview" alt="Lake View - Construction Progress cover" loading="lazy">
+      <span class="name">Lake View - Construction Progress</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+<a class="cover" href="https://drive.google.com/file/d/137CjZfGs5b-7EAsbsRbZR1B4SAdW0KYA/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-novartis" alt="Novartis - Cycle Meeting Egypt 2025 cover" loading="lazy">
+      <span class="name">Novartis - Cycle Meeting Egypt 2025</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1NwxinMnej1w8mlYbFjq--AcNo4tZGkH7/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-paragon-art" alt="Paragon - Art Event cover" loading="lazy">
+      <span class="name">Paragon - Art Event</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1xWnIorPdIAZb-WS9UFWBbNOKZkAptBbD/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-paragon-event" alt="Paragon - Event Highlights cover" loading="lazy">
+      <span class="name">Paragon - Event Highlights</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1lkS3V_zjH9S8ccyCw9xrc-XYyRqw8HY8/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-elwedad-1" alt="ElWedad - Promotional Interview cover" loading="lazy">
+      <span class="name">ElWedad - Promotional Interview</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1nZiAZFtAyvY3XwlIngLF-xKn35h244IM/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-football" alt="Football Ground - Promo Clip cover" loading="lazy">
+      <span class="name">Football Ground - Promo Clip</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1EiBdGA5_4V2I4SMCbJAmVZIU-T86XLjr/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-clinic" alt="Aesthetic Clinic - Treatment Film cover" loading="lazy">
+      <span class="name">Aesthetic Clinic - Treatment Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1VKw1DChs8x4E7iYj_A3ZBBaRsyGE5DaX/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-glc" alt="Art Gallery - Exhibition Opening cover" loading="lazy">
+      <span class="name">Art Gallery - Exhibition Opening</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1CMiEodjQxJlB48LFwYDDlEObZ8WkJ91i/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-elwedad-2" alt="ElWedad - Consultant Interview cover" loading="lazy">
+      <span class="name">ElWedad - Consultant Interview</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1SHYpBmz4oLo_86OjTj1qxxh8JMQKFy9L/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-elwedad-clinic" alt="ElWedad Elite Clinic - Skin Treatment cover" loading="lazy">
+      <span class="name">ElWedad Elite Clinic - Skin Treatment</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/186uMO-N8sH1d-Fb49pWH3PV2VC4TvGNV/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-app" alt="Health Awareness - Nutrition Talk cover" loading="lazy">
+      <span class="name">Health Awareness - Nutrition Talk</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1HRwiXPR3BwvGubzO-oZnVdIYFl0OeHcb/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-aliva" alt="MV ALIVA - Construction Update cover" loading="lazy">
+      <span class="name">MV ALIVA - Construction Update</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1e6DvxXt29rELzdVgEhj2_CuigbCiJeOq/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-iftar" alt="Iftar Gathering - Event Highlights cover" loading="lazy">
+      <span class="name">Iftar Gathering - Event Highlights</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1A700US4_P4FBo8JT-3_oPFz_r5qZ9YGt/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-palmhills" alt="Palm Hills - Project Film cover" loading="lazy">
+      <span class="name">Palm Hills - Project Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1j0bb5N4ST-2sE7SdIvfdRAmDYuYSpH6J/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-eagle" alt="Eagle Group - Gala Event cover" loading="lazy">
+      <span class="name">Eagle Group - Gala Event</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/15ePZAD5NYm1313KGb6sKvYfvKPmwXu8L/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-stepway" alt="Step Way - Construction Site cover" loading="lazy">
+      <span class="name">Step Way - Construction Site</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1U5RTMz6ouS_MvyPSh4ynepWl-Jzy2A8D/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-vini" alt="Vini - Event Highlights cover" loading="lazy">
+      <span class="name">Vini - Event Highlights</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1fiU0NLEcJdFkno2YU8mAGHMhcGJFqA_K/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-vodafone" alt="Vodafone - Ramadan Iftar Event cover" loading="lazy">
+      <span class="name">Vodafone - Ramadan Iftar Event</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1xq1rqO8rg-BiOqHhmwO8Lp6HWeCp14nH/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-paragon-acud" alt="Paragon - ACUD Partnership cover" loading="lazy">
+      <span class="name">Paragon - ACUD Partnership</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1qyqYWoBLZEPL_iSaYmigU-qaV5pFzIdw/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-paragon-c7733" alt="Paragon - Executive Welcome cover" loading="lazy">
+      <span class="name">Paragon - Executive Welcome</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/1IT1fEoRpygAisf9QpdiNYzhcrRv1CIMz/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-paragon-c7734" alt="Paragon - Leadership Message cover" loading="lazy">
+      <span class="name">Paragon - Leadership Message</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+    <a class="cover" href="https://drive.google.com/file/d/104_KFcpZHrPdrxgxAgjm5tABfkn74Z4c/view" target="_blank" rel="noreferrer">
+      <img data-i="cover-dal" alt="Dal Developments - Event Film cover" loading="lazy">
+      <span class="name">Dal Developments - Event Film</span>
+      <span class="badge"><span class="tri">&#9654;</span> Watch the film</span>
+    </a>
+
+
+
+</div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="kicker">Bookings and inquiries</div>
+    <h2>Work with us</h2>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://wa.me/201275314549" target="_blank" rel="noreferrer">WhatsApp · 0127 531 4549</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/fs.first_scene" target="_blank" rel="noreferrer">Instagram · @fs.first_scene</a>
+    </div>
+    <p class="fine">FS | First Scene — Event &amp; Commercial Photo/Video · Egypt | KSA. Albums and films are view-only Google Drive links.</p>
+
+  </div>
+</footer>
+<script src="p02.js"></script>
+<script src="p03.js"></script>
+<script src="p05.js"></script>
+<script src="p06.js"></script>
+<script src="p09.js"></script>
+<script src="p12.js"></script>
+<script src="p13.js"></script>
+<script src="p14.js"></script>
+<script src="p15.js"></script>
+<script src="p17.js"></script>
+<script src="p18.js"></script>
+<script src="p19.js"></script>
+<script src="p20.js"></script>
+<script src="p21.js"></script>
+<script src="p22.js"></script>
+<script>
+  document.querySelectorAll('img[data-i]').forEach(function(el){ var v=window.FSIMGS&&window.FSIMGS[el.dataset.i]; if(v) el.src=v; });
+</script>
+<style>
+.vfilter{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 6px}
+.vfilter button{font:inherit;font-size:13px;letter-spacing:.08em;padding:9px 18px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--muted);cursor:pointer}
+.vfilter button.on{background:var(--accent);border-color:var(--accent);color:#fff}
+.cover.hide{display:none}
+.cover .name,.cover .badge{color:#fff}
+</style>
+<script>
+(function(){
+  var host=document.querySelector('.covers'); if(!host) return;
+  var INT=/Interview|Guest|Dr Samir|Mostafa El Naggar|Hesham|Sherif|Nutrition Talk|Executive Welcome|Leadership Message/i;
+  var CON=/Automotive/i;
+  var cards=[].slice.call(document.querySelectorAll('.cover'));
+  cards.forEach(function(a){var n=(a.querySelector('.name')||{}).textContent||'';a.dataset.cat=INT.test(n)?'Interviews':(CON.test(n)?'Content':'Events');});
+  var bar=document.createElement('div');bar.className='vfilter';
+  ['All','Events','Interviews','Content'].forEach(function(c){
+    var b=document.createElement('button');b.type='button';b.textContent=c;if(c==='All')b.className='on';
+    b.onclick=function(){[].forEach.call(bar.children,function(x){x.className=x===b?'on':'';});
+      cards.forEach(function(a){a.classList.toggle('hide',c!=='All'&&a.dataset.cat!==c);});};
+    bar.appendChild(b);});
+  host.parentNode.insertBefore(bar,host);
+})();
+</script>
+</body>
+</html>
