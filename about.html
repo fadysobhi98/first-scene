@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About - FS | First Scene</title>
+<meta name="description" content="Who we are, what we do and how we work at FS | First Scene.">
+<style>
+:root { --bg:#0c0b0c; --panel:#141213; --ink:#f4f1ee; --muted:#a49e9a; --line:#2a2728; --accent:#c9a25e; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--bg); color:var(--ink); font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; line-height:1.55; }
+  a { color:inherit; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 20px; }
+  header { position:sticky; top:0; z-index:10; background:rgba(12,11,12,.85); backdrop-filter:blur(10px); border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; justify-content:space-between; align-items:center; height:60px; }
+  .brand { font-weight:700; letter-spacing:.14em; font-size:14px; }
+  .brand span { color:var(--accent); }
+  nav a { font-size:13px; color:var(--muted); text-decoration:none; margin-left:22px; letter-spacing:.06em; }
+  nav a:hover { color:var(--ink); }
+  .hero { position:relative; min-height:64vh; display:flex; align-items:flex-end; background-color:#141213; background-position:center 35%; background-size:cover; background-repeat:no-repeat; }
+  .hero::before { content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,11,12,.45), rgba(12,11,12,.92)); }
+  .hero .wrap { position:relative; padding:90px 20px 64px; }
+  .kicker { font-size:12px; letter-spacing:.28em; color:var(--accent); text-transform:uppercase; margin-bottom:14px; }
+  h1 { font-size:clamp(38px,7vw,68px); font-weight:800; letter-spacing:-.01em; line-height:1.05; }
+  .hero p { color:var(--muted); max-width:560px; margin-top:16px; font-size:16px; }
+  section { padding:64px 0 8px; }
+  .sec-head { display:flex; align-items:baseline; justify-content:space-between; gap:16px; border-bottom:1px solid var(--line); padding-bottom:14px; margin-bottom:22px; flex-wrap:wrap; }
+  h2 { font-size:clamp(22px,3.4vw,30px); font-weight:700; }
+  .tag { color:var(--muted); font-size:13px; letter-spacing:.12em; text-transform:uppercase; }
+  .blurb { color:var(--muted); max-width:640px; margin-bottom:20px; font-size:15px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .grid img { width:100%; aspect-ratio:3/4; object-fit:cover; border-radius:10px; display:block; background:var(--panel); }
+  .covers { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:12px; margin-top:12px; }
+  .cover { position:relative; display:block; border-radius:12px; overflow:hidden; text-decoration:none; background:var(--panel); }
+  .cover img { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; transition:transform .35s ease; }
+  .cover:hover img { transform:scale(1.03); }
+  .cover .badge { position:absolute; left:12px; bottom:12px; display:inline-flex; align-items:center; gap:8px; background:rgba(10,9,10,.78); border:1px solid rgba(255,255,255,.14); padding:8px 14px; border-radius:999px; font-size:13px; }
+  .cover .badge .tri { color:var(--accent); font-size:11px; }
+  .cover .name { position:absolute; top:12px; left:12px; background:rgba(10,9,10,.66); padding:5px 11px; border-radius:999px; font-size:12px; letter-spacing:.04em; }
+  .album { display:inline-block; margin-top:16px; font-size:14px; color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; }
+  .album:hover { border-color:var(--accent); }
+  footer { margin-top:80px; border-top:1px solid var(--line); padding:48px 0 60px; }
+  .cta { display:flex; gap:12px; flex-wrap:wrap; margin-top:20px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px; text-decoration:none; font-size:14px; font-weight:600; }
+  .btn-primary { background:var(--ink); color:#141213; }
+  .btn-ghost { border:1px solid var(--line); color:var(--ink); }
+  .fine { color:var(--muted); font-size:12.5px; margin-top:34px; }
+  @media (max-width:700px) { .grid { grid-template-columns:repeat(3,1fr); gap:8px; } }
+
+  nav a.current { color:var(--ink); border-bottom:2px solid var(--accent); padding-bottom:3px; }
+  .page-head { padding:72px 0 8px; }
+</style>
+<style>
+  .about-hero { min-height:40vh; display:flex; align-items:flex-end; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:26px; align-items:center; margin:44px 0; }
+  .split.rev { direction:rtl; } .split.rev > * { direction:ltr; }
+  .split .ph { border-radius:12px; min-height:320px; background-size:cover; background-position:center; }
+  .split h3 { font-size:22px; margin:0 0 10px; }
+  .split p { color:var(--muted); font-size:15px; line-height:1.7; }
+  @media (max-width:760px) { .split { grid-template-columns:1fr; } }
+</style>
+<link rel="stylesheet" href="theme.css"></head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <div class="brand">FS <span>|</span> FIRST SCENE</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="work.html">Work</a>
+      <a href="photos.html">Photos</a>
+      <a href="videos.html">Videos</a>
+      <a href="about.html" class="current">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero about-hero">
+  <div class="wrap">
+    <div class="kicker">About</div>
+    <h1>The scene behind First Scene</h1>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="split">
+    <div>
+      <h3>Who we are</h3>
+      <p>A Cairo-based crew of photographers and filmmakers working across Egypt and Saudi Arabia. We shoot conferences, brand launches, real estate, sports and the occasional perfect wedding dance. First Scene is Fady Sobhy and a team that treats every brief like opening night.</p>
+    </div>
+    <div class="ph" style="background-image:url('https://drive.google.com/thumbnail?id=1r_7_nlFkPtz46x3Z_Cvr6bqYCiHUGWGm&sz=w1200')"></div>
+  </div>
+  <div class="split rev">
+    <div>
+      <h3>What we do</h3>
+      <p>Full event coverage, commercial photography, promo films, interviews, reels and aftermovies. From a 3,000-seat ballroom to a two-person product shoot, we deliver edited photos and films that are ready to publish.</p>
+    </div>
+    <div class="ph" style="background-image:url('https://drive.google.com/thumbnail?id=1Gjzcd5MM2IW30jT3btpTRbVhzpTq4goC&sz=w1200')"></div>
+  </div>
+  <div class="split">
+    <div>
+      <h3>Why work with us</h3>
+      <p>Because we treat your event like our own premiere. We arrive early, stay invisible, and catch the moments you did not see. You get a view-only Drive album, edited and organized, ready to share the same week.</p>
+    </div>
+    <div class="ph" style="background-image:url('https://drive.google.com/thumbnail?id=1h-Em7IFk76Z-4cz34Z1wy4lWoMda8vli&sz=w1200')"></div>
+  </div>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="kicker">Bookings and inquiries</div>
+    <h2>Work with us</h2>
+    <div class="cta">
+      <a class="btn btn-primary" href="https://wa.me/201275314549" target="_blank" rel="noreferrer">WhatsApp · 0127 531 4549</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/fs.first_scene" target="_blank" rel="noreferrer">Instagram · @fs.first_scene</a>
+    </div>
+    <p class="fine">FS | First Scene — Event &amp; Commercial Photo/Video · Egypt | KSA. Albums and films are view-only Google Drive links.</p>
+  </div>
+</footer>
+</body>
+</html>
